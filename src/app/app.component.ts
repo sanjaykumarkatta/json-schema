@@ -11,6 +11,6 @@ export class AppComponent implements OnInit {
   constructor(public sanitizer: DomSanitizer ){}
   ngOnInit(): void {
     
-   this.url =  this.sanitizer.bypassSecurityTrustResourceUrl('/assets/tree/index.html');
+   this.url =  this.sanitizer.bypassSecurityTrustResourceUrl('assets/tree/index.html');
   }
 }
